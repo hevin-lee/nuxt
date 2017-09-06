@@ -1,5 +1,7 @@
 <template>
   <div class="VueToNuxtLogo">
+  <img src="/favicon.ico" alt="">
+    <div class="logo"></div>
     <div class="Triangle Triangle--two"></div>
     <div class="Triangle Triangle--one"></div>
     <div class="Triangle Triangle--three"></div>
@@ -7,7 +9,19 @@
   </div>
 </template>
 
+ <style scoped>
+  :root {
+    --color-main: #000;
+  }
+  .VueToNuxtLogo{
+    background: var(--color-main);
+    &:hover{
+      border: 1px solid #fff;
+    }
+  }
+ </style>
 <style>
+
 .VueToNuxtLogo
 {
   display: inline-block;
@@ -17,6 +31,11 @@
   overflow: hidden;
   height: 180px;
   width: 245px;
+}
+.logo{
+  background: url('~assets/a.jpg');
+  width: 100px;
+  height: 100px;
 }
 .Triangle
 {
